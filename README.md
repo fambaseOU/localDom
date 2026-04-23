@@ -25,16 +25,13 @@ graph LR
 
 ## 🎨 Interface Gallery
 
-| ![Dashboard](./assets/dashboard_hero.png) | ![Security](./assets/security_tab.png) |
+| ![Dashboard](./assets/dashboard_hero.png) | ![Security](./assets/dashboard_security.png) |
 | :---: | :---: |
 | **Main Dashboard** | **Security Control** |
 
 ### 🔌 Seamless Connectivity
 Connect your local LLMs to any external service securely via our encrypted tunnel.
-![Integrations](./assets/integrations_tab.png)
-
-> [!NOTE]
-> *The images above are privacy-safe studio mockups. They accurately represent the LocalDom v2.5 UI but utilize synthetic data to prevent the exposure of real credentials.*
+![Integrations](./assets/dashboard_integrations.png)
 
 ---
 
