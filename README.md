@@ -25,9 +25,13 @@ graph LR
 
 ## 🎨 Interface Gallery
 
-| Dashboard Overview | API Key Management |
+| ![Dashboard](./assets/dashboard_hero.png) | ![Security](./assets/security_tab.png) |
 | :---: | :---: |
-| ![Dashboard](/Users/victor/.gemini/antigravity/brain/1c08d177-e3a5-4606-a386-7c0cac578068/localdom_dashboard_hero_1776899845632.png) | ![Security](/Users/victor/.gemini/antigravity/brain/1c08d177-e3a5-4606-a386-7c0cac578068/localdom_security_tab_1776899864697.png) |
+| **Main Dashboard** | **Security Control** |
+
+### 🔌 Seamless Connectivity
+Connect your local LLMs to any external service securely via our encrypted tunnel.
+![Integrations](./assets/integrations_tab.png)
 
 > [!NOTE]
 > *The images above are privacy-safe studio mockups. They accurately represent the LocalDom v2.5 UI but utilize synthetic data to prevent the exposure of real credentials.*
