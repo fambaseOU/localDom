@@ -23,17 +23,7 @@ graph LR
 
 ---
 
-## 🎨 Interface Gallery
 
-| ![Dashboard](./assets/dashboard_hero.png) | ![Security](./assets/dashboard_security.png) |
-| :---: | :---: |
-| **Main Dashboard** | **Security Control** |
-
-### 🔌 Seamless Connectivity
-Connect your local LLMs to any external service securely via our encrypted tunnel.
-![Integrations](./assets/dashboard_integrations.png)
-
----
 
 ## 🚀 Quick Start
 
@@ -73,35 +63,7 @@ Tired of stale lists? The dashboard now features a **Live Rescan** button. Trigg
 
 LocalDom is designed to be a drop-in replacement for any OpenAI-compatible client.
 
-### 🐍 Python (OpenAI SDK)
-```python
-from openai import OpenAI
 
-client = OpenAI(
-    api_key="your_ld_key",
-    base_url="http://localhost:9090/api/ollama/v1"
-)
-
-response = client.chat.completions.create(
-    model="llama3",
-    messages=[{"role": "user", "content": "Hello LocalDom!"}]
-)
-```
-
-### 🟢 Node.js
-```javascript
-import OpenAI from 'openai';
-
-const openai = new OpenAI({
-  apiKey: 'your_ld_key',
-  baseURL: 'http://localhost:9090/api/ollama/v1'
-});
-
-const response = await openai.chat.completions.create({
-  model: 'llama3',
-  messages: [{ role: 'user', content: 'What is your memory capacity?' }]
-});
-```
 
 ### 🌐 JavaScript (Fetch API)
 ```javascript
