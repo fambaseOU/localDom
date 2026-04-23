@@ -1,0 +1,16 @@
+:root {
+  --bg: #050505;
+  --panel: rgba(255, 255, 255, 0.03);
+  --accent: #5e5ce6;
+  --text: #ffffff;
+  --text-dim: rgba(255, 255, 255, 0.5);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+body { margin: 0; min-height: 100vh; }
+
+* { box-sizing: border-box; }
+
+h1, h2, h3 { font-family: 'Outfit', sans-serif; }
