@@ -12,6 +12,7 @@ import { MSG_TYPES, createMessage } from '../common/protocol.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import fastifyStatic from '@fastify/static';
+import 'dotenv/config';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -78,7 +79,7 @@ fastify.get('/api/status', async () => {
   return {
     online: true,
     tunnels: host.tunnels.size,
-    engines: Array.from(host.tunnels.values()).flatMap(t => t.engines),
+    engines: Array.from(host.tunnels.values()).flatMap(t => t.engines || []),
     keys: getAllKeys(),
     logs: getLogs()
   };
