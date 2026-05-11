@@ -96,10 +96,12 @@ curl http://localhost:9090/api/ollama/v1/chat/completions \
 
 ## 📄 Documentation
 
-- [**API Reference**](docs/API.md) — Headers, Routes, and Status codes.
-- [**Architecture**](docs/ARCHITECTURE.md) — Technical deep-dive.
-- [**Security**](docs/SECURITY.md) — How our E2EE works.
-- [**User Guide**](docs/USER_GUIDE.md) — Multi-agent setup.
+We maintain a comprehensive [**Full Project Wiki**](docs/wiki/Home.md) which includes:
+- [**Getting Started**](docs/wiki/Getting-Started.md) — Installation and first steps.
+- [**API Reference**](docs/wiki/API-Reference.md) — Detailed documentation of all endpoints.
+- [**Architecture**](docs/wiki/Architecture.md) — Technical deep-dive into the "Blind Relay".
+- [**Security Protocols**](docs/wiki/Security-Protocols.md) — Deep dive into our E2EE model.
+- [**Troubleshooting**](docs/wiki/Troubleshooting.md) — Common issues and solutions.
 
 ---
 

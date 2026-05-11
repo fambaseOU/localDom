@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "target": "ESNext",
+    "moduleResolution": "NodeNext",
+    "allowJs": true,
+    "checkJs": false
+  },
+  "include": [
+    "relay/**/*.js",
+    "agent/**/*.js",
+    "common/**/*.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "src"
+  ]
+}

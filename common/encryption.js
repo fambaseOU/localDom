@@ -6,7 +6,12 @@ const TAG_LENGTH = 16;
 
 /**
  * Encrypts a string using AES-256-GCM.
- * Returns a base64 encoded string: [iv]:[tag]:[encryptedPayload]
+ * This provides End-to-End Encryption (E2EE) for tunneled traffic.
+ * 
+ * @param {string} text - The plaintext string to encrypt.
+ * @param {string} secret - The master ENCRYPTION_SECRET.
+ * @returns {string} A colon-separated string in the format: `[iv]:[tag]:[encryptedPayload]`.
+ * @throws {Error} If key derivation fails.
  */
 export function encrypt(text, secret) {
   if (!secret) return text; 
@@ -24,6 +29,12 @@ export function encrypt(text, secret) {
 
 /**
  * Decrypts a string previously encrypted with encrypt().
+ * Validates the authentication tag to ensure data integrity.
+ * 
+ * @param {string} encryptedData - The colon-separated encrypted blob.
+ * @param {string} secret - The master ENCRYPTION_SECRET.
+ * @returns {string} The decrypted plaintext string.
+ * @throws {Error} If decryption fails or the authentication tag is invalid.
  */
 export function decrypt(encryptedData, secret) {
   if (!secret || !encryptedData.includes(':')) return encryptedData;

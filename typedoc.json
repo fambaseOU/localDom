@@ -1,0 +1,21 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": [
+    "relay/index.js",
+    "agent/index.js",
+    "common/protocol.js",
+    "common/encryption.js"
+  ],
+  "entryPointStrategy": "expand",
+  "tsconfig": "jsconfig.json",
+  "out": "docs/api",
+  "plugin": [],
+  "includeVersion": true,
+  "exclude": ["node_modules", "tests", "src"],
+  "name": "LocalDom Technical API Documentation",
+  "readme": "README.md",
+  "disableSources": false,
+  "githubPages": false,
+  "cleanOutputDir": true,
+  "searchInComments": true
+}
